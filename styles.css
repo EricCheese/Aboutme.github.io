@@ -1,67 +1,79 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 0.04em;
+    background-color: bisque;
+    font-family: "Century";
 }
-
-#main-text, .card, .list {
-    border: 1px solid #000;
-}
-
-#main-text, .list {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-}
-
-#navbar {
-    overflow: hidden;
+/* For Main Texts */
+.main-text {
     text-align: center;
-    margin: -10px -10px 100px;
-    padding: 20px 0;
-    border-bottom: 2px solid #000;
+}
+
+/* For navbar */
+.navbar {
+    font-size: 18px;
+    align-self: center;
+    height: 100px;
+}
+/* For Buttons */
+.button {
+    background-color: #ffdbb3;
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 30px;
+    margin: 4px;
+    border: 1px solid #000;
+    letter-spacing: 0.08 em;
+    text-transform: uppercase;
+}
+/* For on:hover */
+.button:hover {
+    background-color: aliceblue;
+}
+
+.card {
+    padding: 16px;
+    margin: 12px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+
+/* For Images */
+img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
 }
 
 .cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
-    max-width: 800px;
     margin: 0 auto;
 }
 
-.button {
-    display: inline-block;
-    padding: 14px 30px;
-    margin: 4px;
-    border: 1px solid #000;
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+.header-container {
+    background-color: antiquewhite;
+    padding: 16px;
 }
 
-.button:hover {
-    background: #eee;
+.navbar {
+    text-align: center;
+    padding: 20px 0;
+    background-color: antiquewhite;
 }
 
-.card {
+.requirement {
     padding: 16px;
     margin: 12px;
+    background-color: antiquewhite;
+    border-radius: 20px;
 }
 
-img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+.requirement-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
 }
 
-.list {
-    box-sizing: border-box;
-    overflow-wrap: anywhere;
-    padding-left: 40px;
-}
-
-.list-item {
-    margin: 0 0 8px 0;
+#footer {
+    text-align: center;
 }
